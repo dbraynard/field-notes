@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+        "outDir": "./dist/",
+        "sourceMap": true,
+        "noImplicitAny": true,
+        "module": "commonjs",
+        "target": "esnext",
+        "allowJs": true,
+        "baseUrl": "./src",
+        "typeRoots": ["./node_modules/@tableau", "./node_modules/@types"]
+    }
+}

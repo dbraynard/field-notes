@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Field Notes Dialog</title>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="lib/tableau.extensions.1.latest.js"></script>
+
+    <style>
+        .dialogOk {
+            margin-left: 6px !important;
+            margin-right: 18px !important;
+            margin-top: 12px !important;
+            margin-bottom: 12px !important;
+        }
+
+        .dialogButton {
+            padding-left: 24px !important;
+            padding-right: 24px !important;
+            border-radius: 1px !important;
+        }
+
+        .dialogCancel {
+            margin-left: 6px !important;
+            margin-right: 6px !important;
+            margin-top: 12px !important;
+            margin-bottom: 12px !important;
+        }
+
+        td.dialogButtonGroup {
+            width: 1%;
+            text-align: right;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <img id="home" style="margin-top: 5px;" height='26px' src='images/DemoIncLogo.png' />
+        <h4>Settings</h4>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="includeDateCb" />
+            <label class="form-check-label" for="includeDateCb">
+                Include Date
+            </label>
+        </div>
+        <hr />
+        <table>
+            <tr>
+                <td class="dialogButtonGroup">
+                    <button id="cancelButton" type="button" class="btn dialogButton dialogCancel">Cancel</button>
+                    <button id="okButton" type="button" class="btn btn-success dialogButton dialogOk">Ok</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>

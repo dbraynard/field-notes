@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Field Notes</title>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="lib/tableau.extensions.1.latest.js"></script>
+
+    <style>
+        .tableFixHead {
+            overflow-y: auto;
+            height: 180px;
+        }
+
+        .tableFixHead thead th {
+            position: sticky;
+            top: 0;
+        }
+
+        .tableFixHead table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        .tableFixHead th,
+        .tableFixHead td {
+            padding: 6px 10px;
+            border: 1px solid rgb(206, 206, 206);
+            vertical-align:top;
+        }
+
+        .tableFixHead th {
+            background: rgb(173, 173, 173);
+        }
+
+        .spinnerInTable {
+            width: 1%;
+            text-align: center;
+            padding: 15% !important;
+        }
+
+        .dialogButton {
+            padding-left: 24px !important;
+            padding-right: 24px !important;
+            border-radius: 1px !important;
+        }
+
+        .dialogOk {
+
+            margin-left: 6px !important;
+            margin-right: 18px !important;
+            margin-top: 12px !important;
+            margin-bottom: 12px !important;
+        }
+
+        select {
+            border-top: none !important;
+            border-left: none !important;
+            border-right: none !important;
+            box-shadow: unset !important;
+            padding-bottom: 0px !important;
+        }
+
+        .dialogInput {
+            padding-left: 6px;
+            font-size: 12px;
+            height: 24px;
+        }
+    </style>
+</head>
+
+<body style="border:rgb(189, 189, 189) 1px solid; border-collapse: collapse;">
+    <div class="container" style="background-color: rgb(255, 255, 255);">
+        <p id="mainContent">
+
+            <img id="home" style="margin-top: 5px;" height='26px' src='images/DemoIncLogo.png' />
+        <h4>Field Notes</h4>
+
+        <div class="table-responsive">
+            <table id="loadingTable" class="tableFixHead">
+                <tbody>
+                    <tr>
+                        <td class="spinnerInTable"><img id="home" src='images/Large-spinner-50x50.gif' /></td>
+                    </tr>
+                </tbody>
+            </table>
+            <table id="fieldNotesTable" class="tableFixHead hidden">
+                <thead>
+                    <tr>
+                        <th style="width: 130px;">Field</th>
+                        <th>Note</th>
+                        <th id="dateHeader">Date</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+            <table id="noFieldNotesTable" class="tableFixHead hidden">
+                <tbody>
+                    <tr>
+                        <td>There are no field notes.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="user-input">
+            <table>
+                <tr>
+                    <td>
+                        <div class="form-group">
+                            <label for="fieldList">Field List:</label>
+                            <select class="form-control" id="fieldList">
+                            </select>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="form-group">
+                            <label for="fieldNotes">Notes:</label>
+                            <input type="text" class="form-control dialogInput" id="fieldNote" placeholder="Notes">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button type="button" class="btn btn-primary dialogButton" id="addNote">Add Note</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        </p>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest manifest-version="0.1"
+  xmlns="http://www.tableau.com/xml/extension_manifest">
+  <dashboard-extension id="com.example.demoinc" extension-version="0.1.0">
+    <default-locale>en_US</default-locale>
+    <name resource-id="name"/>
+    <description>Demo Inc. Field Notes</description>
+    <author name="Your Name" email="your.email@your-domain-goes-here.com" organization="my organzation" website="https://www.your-domain-goes-here.com"/>
+    <min-api-version>0.8</min-api-version>
+    <source-location>
+      <url>https://dbraynard.github.io/DemoInc/FieldNotes.html</url>
+    </source-location>
+    <icon>iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAMAAAAp4XiDAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJYUExURf///+Te/7Sj///v4f/Cj/vHnq1xr/rYwP/n0v/x5v/Vsv93AP+QMP+ycf/48/+xbv97Cf+3eP/x5/+pX/93Af+ycP+XPf/t3f+NK//38vbs7plu2aRvw65vrfiyff+VOv+CFv/Yt9vT/4ht/9nR///17f/Aiv98DP9/Ef/t38O1/8Cx///z6v+wbf+cR/r//cb/8deoVe2NJquY/6eT//+5ff+4fMv/8nT/3mP/2sSpUeSNJJF4/41z//+7gf93Av/y6fz//qX/6ezq/url//+3eZTq6dDF///hyP/38Hud8rio//+eTP/Ln2fu3oZx/Z6I///Rq/+qYXqh8Ylv//v6//9/EP+JI5b/5m/O5uPc//+dSHb/3mfs3sq+//+6f//cv6+d///Sqv/SrJZ////HmfXz///Zuv+/h5P/5W7R5f38///dwf+6gMT/8Xqj8aWR//Px///Ws//Hl3H/3Wbx3ZV9///Ppf/Srcn/8nuf8v/Hlv/fw6D/6HHF6P/q2Ydv/qCK//mZTf/8+/F2HaLV8MiYVeaGJq2a/5Rt5f+zcvn4/7Gf/9JzX+p1K7yt/+Ha/75xiuzo/5yG/8Gz/+jj/+l1Luza4/uJKu7q/8CGq85yaNfO/4tx/96DXv+CF5tt1bKh/9XM//+iU/CUWebh/9/Y//+ZQv+BFMW4///Vsf/JnP+RM/+8hP+zc/+4e/+5fv+xb/+pYP+hUf+KJf/Ekv+IIv+BFf+7gv/27/+9hP+SNP/DkP/9/f+bRf92Af94A/99Df+HHv+OLv+XP/+hUP/bu//49Lz0JUoAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALUSURBVEhL7ZT5XwxhHMdH7saRxLrD5D42LNvQ7lZuq+RIhBByLHLUkCP3GVqU+wpF7vum3P+W53vM7jPNxMsvfvL+Zeb7fD7v3dmdmUf5TxM04+NfEMPHP9C8RYSWrVq3acvLvyFWbUS79rEdOGuCjtyUiesUz6kjnblmJaELx044K6ra1cUFO6h06w706Nmrd59EFAR9+3HDBil42l/TtCRlwMBBqKiDh+CqHUkZKpRh4jh8BCrqSFxtjDt5FISjk91iGCMUDy6PRUUdh4MVb4o+HrIJeopXUVKF4qPAj0ogjaYo6Rm6biq6njFRGJo2iTL6FybTEAWMqKJPQWUqZdNQiZtOk4kXepKizwAlyOlMdDJ5Itwp2JOUrFlCyeZ4NipzeCKSsSYr+lyhzMvhfD4EuTwQC6gmKwvhyvI4XwSBanlsFlNNVpaAks/5UlSW8YRQy6LooCznvACVFTwh3LIpKzmnd28VTwj9YRYlCxStkPLVqKyhgVhLNVlZh0owhPl6VDbgObORarJShIq2aTPkW1DZil3GXYw1SSmBWwkYsJ9tQ2U7lZlS7EnKDjbE/RRP2k5UdnGZ2W1VyriPxOTQfdnDXSYdnIhStpfbxL79EAQOcDdCabGplESvijkIQSIXJdyHDkNypAh/eepReDGJY7CuHudelPIT2klITomOUREOKaFwhUHKaVQKuBjhzFmNlezKKl5TlKrKbKGcQ+U8r5kk+USEygVeMbmYfwmNy74rvIKEKuH7r16DiPYxifjrqNwQGxs9PkChR+xA1TfLpa1P4hYat6vFdXj4MVVqDCNYCx/gpMTfQeOuSwnVBg2jBhfDdeb76qBk5qKh3qMxry5MJyaNFdf9B9hX1Ye8YoOUR4/9fv+Tp8+ev8A28JILdlCx88qyT1hxVF6/ecuxE++4JfH+w0cOnUn7lFBfHxA0NHz+8vXbd/+Pn5z8YxTlF3CJyKsPEjrzAAAAAElFTkSuQmCC</icon>
+    <context-menu>
+      <configure-context-menu-item />
+    </context-menu>
+  </dashboard-extension>
+  <resources>
+    <resource id="name">
+      <text locale="en_US">Demo Inc. Field Notes</text>
+    </resource>
+  </resources>
+</manifest>
